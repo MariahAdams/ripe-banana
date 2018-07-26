@@ -1,10 +1,32 @@
-// // const { assert } = require('chai');
+const { assert } = require('chai');
+const request = require('./request');
+const { execSync } = require('child_process');
+const { join } = require('path');
+const mongoose = require('mongoose');
+
+
+const filename = join(__dirname, 'films-data.json');
+
+describe.only('DATA API', () => {
+
+    beforeEach(() => {
+        const cmd = `mongoimport --db ${mongoose.connection.name} --collection films --drop --file ${filename}`;
+        execSync(cmd);
+    });
+
+    it('works', () => {
+
+    });
+
+});
+
+// const { assert } = require('chai');
 // const request = require('./request');
 // const { dropCollection } = require('./_db');
 // const { save } = request;
 // const data = require('./data');
 
-// describe.skip('SAVING DATA', () => {
+// describe.only('SAVING DATA', () => {
 
 //     beforeEach(() => dropCollection('reviews'));
 
@@ -26,7 +48,7 @@
 //         return save(data.actors, 'actors');
 //     });
 
-//     it.skip('saves films', () => {
+//     it('saves films', () => {
 //         return save(data.films, 'films');
 //     });
 
