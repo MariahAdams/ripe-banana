@@ -1,0 +1,13 @@
+{"_id":{"$oid":"5b5a0c0f96d7eb6dedd8cdf1"},"name":"Tom Hanks","dob":{"$date":"1956-07-09T07:00:00.000Z"},"pob":"Concord, California, USA","__v":0}
+{"_id":{"$oid":"5b5a0c0f96d7eb6dedd8cdf2"},"name":"Emma Thompson","dob":{"$date":"1959-04-15T08:00:00.000Z"},"pob":"London, England, UK","__v":0}
+{"_id":{"$oid":"5b5a0c0f96d7eb6dedd8cdf3"},"name":"Chris Hemsworth","dob":{"$date":"1983-08-11T07:00:00.000Z"},"pob":"Melbourne, Victoria, Australia","__v":0}
+{"_id":{"$oid":"5b5a0c0f96d7eb6dedd8cdf4"},"name":"Robert Downey Jr.","dob":{"$date":"1965-04-04T08:00:00.000Z"},"pob":"New York City, New York, USA","__v":0}
+{"_id":{"$oid":"5b5a0c0f96d7eb6dedd8cdf5"},"name":"Chris Evans","dob":{"$date":"1981-06-13T07:00:00.000Z"},"pob":"Boston, Massachusetts, USA","__v":0}
+{"_id":{"$oid":"5b5a0c0f96d7eb6dedd8cdf6"},"name":"Scarlett Johansson","dob":{"$date":"1984-11-22T08:00:00.000Z"},"pob":"New York City, New York, USA","__v":0}
+{"_id":{"$oid":"5b5a0c0f96d7eb6dedd8cdf7"},"name":"Benedict Cumberbatch","dob":{"$date":"1976-07-19T07:00:00.000Z"},"pob":"London, England, UK","__v":0}
+{"_id":{"$oid":"5b5a0c0f96d7eb6dedd8cdf8"},"name":"Tom Holland","dob":{"$date":"1996-06-01T07:00:00.000Z"},"pob":"Kingston, England, UK","__v":0}
+{"_id":{"$oid":"5b5a0c0f96d7eb6dedd8cdf9"},"name":"Tom Hiddleston","dob":{"$date":"1981-02-09T08:00:00.000Z"},"pob":"London, England, UK","__v":0}
+{"_id":{"$oid":"5b5a0c0f96d7eb6dedd8cdfa"},"name":"Chris Pratt","dob":{"$date":"1979-07-21T07:00:00.000Z"},"pob":"Virginia, Minnesota, USA","__v":0}
+{"_id":{"$oid":"5b5a0c0f96d7eb6dedd8cdfb"},"name":"Mark Ruffalo","dob":{"$date":"1967-11-22T08:00:00.000Z"},"pob":"Kenosha, Wisconsin, USA","__v":0}
+{"_id":{"$oid":"5b5a0c0f96d7eb6dedd8cdfc"},"name":"Samuel L. Jackson","dob":{"$date":"1948-12-21T07:00:00.000Z"},"pob":"Washington, DC, USA","__v":0}
+{"_id":{"$oid":"5b5a0c0f96d7eb6dedd8cdfd"},"name":"Gwyneth Paltrow","dob":{"$date":"1972-09-27T07:00:00.000Z"},"pob":"Los Angeles, California, USA","__v":0}

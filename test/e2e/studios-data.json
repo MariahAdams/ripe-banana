@@ -1,0 +1,3 @@
+{"_id":{"$oid":"5b59fec3f8940cdfbc4d4e46"},"address":{"city":"Burbank","state":"California","country":"USA"},"name":"Disney","__v":0}
+{"_id":{"$oid":"5b5a591711303d7bc4346e1e"},"address":{"city":"Burbank","state":"California","country":"USA"},"name":"Warner Bros.","__v":0}
+{"_id":{"$oid":"5b5a591711303d7bc4346e1f"},"address":{"city":"Century City","state":"California","country":"USA"},"name":"20th Century Fox","__v":0}

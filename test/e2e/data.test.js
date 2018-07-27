@@ -1,58 +1,30 @@
-const { assert } = require('chai');
-const request = require('./request');
 const { execSync } = require('child_process');
 const { join } = require('path');
 const mongoose = require('mongoose');
-
-
-const filename = join(__dirname, 'films-data.json');
+const { dropDatabase } = require('./_db');
+const filmsDataFile = join(__dirname, 'films-data.json');
+const actorsDataFile = join(__dirname, 'actors-data.json');
+const studiosDataFile = join(__dirname, 'studios-data.json');
+const reviewersDataFile = join(__dirname, 'reviewers-data.json');
+const usersDataFile = join(__dirname, 'users-data.json');
+const reviewsDataFile = join(__dirname, 'reviews-data.json');
 
 describe.only('DATA API', () => {
 
+    beforeEach(() => dropDatabase());
     beforeEach(() => {
-        const cmd = `mongoimport --db ${mongoose.connection.name} --collection films --drop --file ${filename}`;
-        execSync(cmd);
+        execSync(`mongoimport --db ${mongoose.connection.name} --collection films --drop --file ${filmsDataFile}`);
+        execSync(`mongoimport --db ${mongoose.connection.name} --collection actors --drop --file ${actorsDataFile}`);
+        execSync(`mongoimport --db ${mongoose.connection.name} --collection studios --drop --file ${studiosDataFile}`);
+        execSync(`mongoimport --db ${mongoose.connection.name} --collection users --drop --file ${usersDataFile}`);
+        execSync(`mongoimport --db ${mongoose.connection.name} --collection reviewers --drop --file ${reviewersDataFile}`);
+        execSync(`mongoimport --db ${mongoose.connection.name} --collection reviews --drop --file ${reviewsDataFile}`);
     });
-
+   
     it('works', () => {
 
     });
-
 });
 
-// const { assert } = require('chai');
-// const request = require('./request');
-// const { dropCollection } = require('./_db');
-// const { save } = request;
-// const data = require('./data');
-
-// describe.only('SAVING DATA', () => {
-
-//     beforeEach(() => dropCollection('reviews'));
-
-//     it.skip('saves users', () => {
-//         return save(data.reviewers[0], 'reviewers/signup')
-//             .then(() => save(data.reviewers[1], 'reviewers/signup'))
-//             .then(() => save(data.reviewers[2], 'reviewers/signup'))
-//             .then(() => save(data.reviewers[3], 'reviewers/signup'))
-//             .then(() => save(data.reviewers[4], 'reviewers/signup'))
-//             .then(() => save(data.reviewers[5], 'reviewers/signup'))
-//             .then(() => save(data.reviewers[6], 'reviewers/signup'));
-//     });
-
-//     it.skip('saves studios', () => {
-//         return save(data.studios, 'studios');
-//     });
-
-//     it.skip('saves actors', () => {
-//         return save(data.actors, 'actors');
-//     });
-
-//     it('saves films', () => {
-//         return save(data.films, 'films');
-//     });
-
-//     it.skip('saves reviews', () => {
-//         return save(data.reviews, 'reviews');
-//     });
-// });
+// --out
+// --jsonArray
